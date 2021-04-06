@@ -1,0 +1,91 @@
+.about-wrapper {
+    height: 100vh;
+    min-height: 800px;
+    position: relative;
+}
+
+.about-wrapper .about-image {
+    position: absolute;
+    width: 90%;
+    bottom: 0;
+    right: 0;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.about-image img {
+    width: 100%;
+}
+
+.about-wrapper .about-text {
+    position: absolute;
+    left: 80px;
+    top: 140px;
+    width: 50%;
+}
+
+.about-text h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 48px;
+    color: #CF3943;
+}
+
+.about-text h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #151712;
+}
+
+.about-text p {
+    margin-bottom: 20px;
+}
+
+.about-text p:last-of-type {
+    margin-top: 40px;
+    text-align: right;
+    font-family: 'Great Vibes', cursive;
+    font-size: 36px;
+    color: #CF3943;
+}
+
+@media screen and (max-width: 890px) {
+
+    .about-text h2 {
+        font-size: 36px;
+    }
+
+    .about-wrapper .about-text {
+        width: 80%;
+        left: 30px;
+    }
+
+    .about-text p:last-of-type {
+        text-align: left;
+    }
+
+}
+
+@media screen and (max-width: 570px) {
+
+    .about-wrapper {
+        min-height: 1000px;
+    }
+    
+}
+
+@media screen and (max-width: 450px) {
+
+    .about-wrapper {
+        min-height: 1100px;
+    }
+    
+}
+
+@media screen and (max-width: 320px) {
+
+    .about-wrapper {
+        min-height: 1200px;
+    }
+    
+}

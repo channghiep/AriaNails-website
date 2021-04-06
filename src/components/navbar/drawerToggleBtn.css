@@ -1,0 +1,156 @@
+.toggle-btn > button {
+    height: 40px;
+    width: 50px;
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    background: transparent;
+    border: none;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    z-index: 3;
+
+    transition: all .25s ease-in-out;
+}
+
+.changed-btn {
+    height: 30px;
+    width: 40px;
+    cursor: pointer;
+
+    background: transparent;
+    border: none;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    transition: all .25s ease-in-out;
+}
+
+.toggle-btn:focus {
+    outline: none;
+}
+
+.toggle-btn__line {
+    width: 50px;
+    height: 7px;
+    background-color: #FFF;
+    border-radius: 4px;
+
+    transition: all .25s ease-in-out;
+}
+
+.navbar-body.scroll .toggle-btn__line {
+    background-color: #CF3943;
+}
+
+.changed-btn .toggle-btn__line:nth-of-type(2) {
+    background: transparent;
+}
+
+.changed-btn .toggle-btn__line:first-of-type {
+    transform: rotate(45deg) translate(10px, 12px);
+    background-color: #151712;
+}
+
+.changed-btn .toggle-btn__line:last-of-type {
+    transform: rotate(-45deg) translate(10px, -12px);
+    background-color: #151712;
+}
+
+.changed-btn + .side-drawer {
+    transition: all .25s ease-in-out;
+    transform: translateX(0);
+}
+
+.side-drawer {
+    color: #FFF;
+    background-color: #FED0BB;
+    font-size: 72px;
+    text-align: center;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    transition: all .25s ease-in-out;
+    transform: translateX(-100%);
+}
+
+.side-drawer-items a {
+    font-family: 'Great Vibes', cursive;
+    font-size: 48px;
+    color: #CF3943!important;
+}
+
+.side-drawer-items .nav-logo #Path_1,
+.side-drawer-items .nav-logo #Path_2,
+.side-drawer-items .nav-logo #Path_3,
+.side-drawer-items .nav-logo #Path_4 {
+    fill: #CF3943!important;
+}
+
+.side-drawer-items a p {
+    margin-bottom: 10px;
+}
+
+.side-drawer-items .nav-social-burger {
+    font-size: 0;
+}
+
+.side-drawer-items .nav-social-bg-link {
+    height: 30px;
+    margin: 14px!important;
+}
+
+.side-drawer-items .nav-social-bg-link svg {
+    fill: #CF3943;
+}
+
+@media screen and (min-width: 851px) {
+
+    .toggle-btn > button {
+        display: none;
+    }
+
+    .side-drawer {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .toggle-btn > button {
+        height: 30px;
+        width: 40px;
+    }
+
+    .toggle-btn__line {
+        width: 40px;
+        height: 6px;
+    }
+
+    .changed-btn .toggle-btn__line:first-of-type {
+        transform: rotate(45deg) translate(10px, 7px);
+    }
+    
+    .changed-btn .toggle-btn__line:last-of-type {
+        transform: rotate(-45deg) translate(10px, -7px);
+    }
+
+}

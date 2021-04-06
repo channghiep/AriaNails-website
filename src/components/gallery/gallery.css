@@ -1,0 +1,78 @@
+.gallery-wrapper {
+    background-color: #DAD2BC;
+}
+
+.gallery-text h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 48px;
+    color: #CF3943;
+    text-align: center;
+    padding-top: 140px;
+}
+
+.gallery-text h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 40px;
+    padding-bottom: 20px;
+    color: #3C6E71;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+
+.footer > p, .lighthouse p {
+    font-family: 'Cormorant Garamond', serif;
+    margin: 0 0 0 20px;
+    color: #3C6E71;
+}
+
+.lighthouse {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.lighthouse p {
+    margin: 0 6px 0 0;
+}
+
+.lighthouse a {
+    font-family: 'Russo One', sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    color: #2B35A1;
+}
+
+.lighthouse a:visited {
+    color: #2B35A1;
+}
+
+.lighthouse svg {
+    width: 20px;
+    margin-right: 6px;
+    fill: #2B35A1;
+}
+
+/* .gallery-text + div > div {
+    justify-content: space-between;
+}
+
+.gallery-wrapper img {
+    margin: 0!important;
+} */
+
+@media screen and (max-width: 890px) {
+
+    .gallery-text h2 {
+        font-size: 36px;
+    }
+
+}

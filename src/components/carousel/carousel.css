@@ -1,0 +1,107 @@
+.slick-slider {
+    overflow: hidden;
+    border: 0;
+    position: relative;
+    max-height: 100vh;
+}
+
+.slick-slider .slick-arrow {
+    position: absolute;
+    right: 0;
+    opacity: 0;
+}
+
+.slick-slider .slick-dots {
+    position: absolute;
+    bottom: 20px;
+}
+
+.slick-slider .slick-dots button::before {
+    color: #FFF;
+}
+
+.slick-slider .slick-dots .slick-active button::before {
+    color: #FFF;
+}
+
+.carousel-banner {
+    position: relative;
+}
+
+.carousel img {
+    width: 100vw;
+}
+
+.carousel h1 {
+    position: absolute;
+    top: 40%;
+    left: 60px;
+
+    font-family: 'Cormorant Garamond', serif;
+    /* font-style: italic; */
+    font-size: 72px;
+    color: #151712;
+}
+
+.carousel h1 span {
+    color: #CF3943;
+}
+
+.banner-2 h1 {
+    top: 30%;
+}
+
+.banner-2 h1 span.carousel-number {
+    font-size: 120px;
+    color: #0B6E4F;
+}
+
+.banner3 h1 {
+    text-align: right;
+    top: 28%;
+    right: 60px;
+}
+
+@media screen and (max-width: 1300px) {
+
+    .carousel h1 {
+        left: 30px;
+        font-size: 48px;
+    }
+
+    .banner-2 h1 span.carousel-number {
+        font-size: 80px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    /* .carousel-banner {
+        height: 100vh;
+    }
+
+    .carousel img {
+        height: 100%;
+        width: auto;
+    } */
+
+    .carousel h1 {
+        font-size: 24px;
+    }
+
+    .banner-2 h1 span.carousel-number {
+        font-size: 48px;
+    }
+
+    .banner-2 h1 {
+        width: 50%;
+    }
+
+    .banner3 h1 {
+        text-align: right;
+        top: 28%;
+        right: 30px;
+    }
+
+}

@@ -1,0 +1,104 @@
+.slicker {
+    z-index: 10;
+    margin-top: -100px;
+    margin-bottom: 0;
+}
+
+.slicker-text {
+    background-color: #111;
+    height: 100px;
+    width: 100vw;
+
+    display: flex!important;
+    align-items: center;
+    justify-content: center;
+    /* padding-top: 24px; */
+    padding-left: 30px;
+}
+
+.slicker-text p {
+    font-family: 'Cormorant Garamond', serif;
+    
+    color: #FFF;
+}
+
+.slicker-text p:first-of-type {
+    font-size: 48px;
+    margin-right: 20px;
+    /* color: #CF3943; */
+}
+
+.slicker-text p:nth-of-type(2) {
+    font-size: 40px;
+}
+
+.slicker-text p span {
+    color: #CF3943;
+    margin-right: 10px;
+}
+
+
+@media screen and (max-width: 1200px) {
+
+    .slicker {
+        margin-top: -120px;
+    }
+    
+    .slicker-text {
+        height: 120px;
+        flex-direction: column;
+        /* padding-top: 14px; */
+    }
+
+    .slicker-text p:first-of-type {
+        font-size: 40px;
+    }
+
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .slicker {
+        margin-top: -10px;
+        }
+
+    .slicker-text {
+        height: auto;
+        min-height: 120px;
+
+        padding-top: 0;
+        padding-left: 10px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .slicker-text p:first-of-type {
+        font-size: 36px;
+        margin-top: -8px;
+    }
+
+    .slicker-text p:nth-of-type(2) {
+        font-size: 24px;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+    .slicker-text{
+        justify-content: center;
+        text-align: center;
+    }
+    .slicker-text p:first-of-type {
+        font-size: 24px;
+        margin-top: -8px;
+    }
+    #grand{
+        font-size: 36px;
+    }
+
+    .slicker-text p:nth-of-type(2) {
+        font-size: 18px;
+    }
+
+}
